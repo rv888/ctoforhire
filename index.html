@@ -1,87 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NX0ZHXBXJ7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-NX0ZHXBXJ7');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Los Angeles-based Fractional CTO with 25+ years of experience in technology solutions. Available for remote work to assist businesses in their tech strategy, team leadership, and more.">
-    <meta name="keywords" content="Fractional CTO, Technology Consultant, CTO for Hire, Los Angeles CTO, Remote CTO, Tech Consultant, AI Solutions, Startup CTO, Python Developer, Django, Cloud Services">
-    <meta name="author" content="Your Name">
-    <title>CTO for Hire - Fractional CTO Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NX0ZHXBXJ7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NX0ZHXBXJ7');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ryan Vinson is a Los Angeles Fractional CTO and technical advisor helping founders make better technology decisions, evaluate teams, and move important products forward.">
+  <meta name="author" content="Ryan Vinson">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="Ryan Vinson | Fractional CTO">
+  <meta property="og:description" content="Senior technical leadership for founders and teams that need clarity, momentum, and a practical path forward.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ctoforhire.xyz/">
+  <link rel="canonical" href="https://ctoforhire.xyz/">
+  <title>Fractional CTO for Founders | Ryan Vinson</title>
+  <style>
+    :root {
+      --ink: #e9eef7;
+      --muted: #a8b4c8;
+      --navy: #0b1220;
+      --navy-2: #111c30;
+      --panel: rgba(23, 37, 61, .72);
+      --line: rgba(184, 204, 234, .16);
+      --blue: #69b7ff;
+      --orange: #ff9a5c;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--navy);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; }
+    .eyebrow {
+      color: var(--orange);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 21px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      font-size: .94rem;
+      font-weight: 750;
+      text-decoration: none;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { color: #07111f; background: var(--blue); }
+    .btn-primary:hover { background: #8bc9ff; }
+    .btn-secondary { border-color: var(--line); color: var(--ink); background: rgba(255,255,255,.03); }
+    .btn-secondary:hover { border-color: rgba(105,183,255,.65); }
+    header {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+      background: radial-gradient(circle at 84% 18%, rgba(105,183,255,.19), transparent 34%), radial-gradient(circle at 12% 0%, rgba(255,154,92,.12), transparent 30%), var(--navy);
+    }
+    header::after {
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      right: -230px;
+      bottom: -320px;
+      border: 1px solid rgba(105,183,255,.14);
+      border-radius: 50%;
+      content: "";
+      box-shadow: 0 0 0 34px rgba(105,183,255,.035), 0 0 0 68px rgba(105,183,255,.025);
+    }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 25px 0; }
+    .brand { font-size: .94rem; font-weight: 800; letter-spacing: .04em; text-decoration: none; }
+    .brand span { color: var(--blue); }
+    .nav-links { display: flex; gap: 26px; color: var(--muted); font-size: .88rem; }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover { color: var(--ink); }
+    .hero { position: relative; z-index: 1; display: grid; grid-template-columns: 1.08fr .92fr; gap: 70px; align-items: center; padding: 93px 0 112px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 720px; margin-bottom: 24px; font-size: clamp(2.75rem, 6vw, 5.35rem); line-height: .98; letter-spacing: -.065em; }
+    h1 em { color: var(--blue); font-style: normal; }
+    .hero-copy { max-width: 625px; color: var(--muted); font-size: 1.16rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .hero-note { margin-top: 18px; color: #8492a8; font-size: .84rem; }
+    .signal-card { position: relative; padding: 28px; border: 1px solid var(--line); border-radius: 16px; background: linear-gradient(145deg, rgba(30, 49, 80, .86), rgba(14, 24, 41, .72)); box-shadow: 0 24px 80px rgba(0,0,0,.22); }
+    .signal-card::before { position: absolute; top: -1px; left: 28px; width: 76px; height: 3px; background: var(--orange); content: ""; }
+    .signal-label { color: var(--muted); font-size: .77rem; letter-spacing: .13em; text-transform: uppercase; }
+    .signal-card h2 { margin: 12px 0 25px; font-size: 1.55rem; line-height: 1.2; letter-spacing: -.025em; }
+    .signal-list { display: grid; gap: 15px; margin: 0; padding: 0; list-style: none; }
+    .signal-list li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; color: #d3dcea; font-size: .94rem; }
+    .signal-list li::before { color: var(--orange); content: "↗"; font-weight: 800; }
+    section { padding: 104px 0; }
+    .section-head { max-width: 680px; margin-bottom: 45px; }
+    h2 { margin-bottom: 14px; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; letter-spacing: -.05em; }
+    .section-intro { color: var(--muted); font-size: 1.06rem; }
+    .light-section { color: #15243a; background: #edf3fa; }
+    .light-section .eyebrow { color: #d5672b; }
+    .light-section .section-intro { color: #566982; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { padding: 27px; border: 1px solid var(--line); border-radius: 13px; background: var(--panel); }
+    .light-section .card { border-color: #d5e0ec; background: #fff; }
+    .card-number { color: var(--orange); font-size: .8rem; font-weight: 850; letter-spacing: .12em; }
+    .card h3 { margin: 15px 0 9px; font-size: 1.17rem; letter-spacing: -.02em; }
+    .card p { margin-bottom: 0; color: var(--muted); font-size: .94rem; }
+    .light-section .card p { color: #60728a; }
+    .split { display: grid; grid-template-columns: .82fr 1.18fr; gap: 80px; align-items: start; }
+    .proof { border-top: 1px solid var(--line); }
+    .proof-row { display: grid; grid-template-columns: 145px 1fr; gap: 25px; padding: 23px 0; border-bottom: 1px solid var(--line); }
+    .proof-row strong { color: var(--blue); font-size: 1rem; }
+    .proof-row span { color: var(--muted); font-size: .95rem; }
+    .steps { display: grid; gap: 0; counter-reset: step; }
+    .step { display: grid; grid-template-columns: 46px 1fr; gap: 19px; padding: 25px 0; border-top: 1px solid var(--line); }
+    .step::before { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid rgba(105,183,255,.45); border-radius: 50%; color: var(--blue); content: counter(step, decimal-leading-zero); counter-increment: step; font-size: .8rem; font-weight: 800; }
+    .step h3 { margin-bottom: 5px; font-size: 1.05rem; }
+    .step p { margin-bottom: 0; color: var(--muted); font-size: .93rem; }
+    .cta { padding: 95px 0; background: linear-gradient(115deg, #162f4e, #102033 68%, #3b2a28); }
+    .cta-inner { display: flex; align-items: end; justify-content: space-between; gap: 35px; }
+    .cta h2 { max-width: 620px; margin-bottom: 0; }
+    .cta p { max-width: 500px; margin: 15px 0 0; color: #b8c8dc; }
+    footer { padding: 26px 0; border-top: 1px solid var(--line); color: #8291a6; font-size: .83rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+    .footer-links { display: flex; gap: 18px; }
+    .footer-links a { text-decoration: none; }
+    .footer-links a:hover { color: var(--ink); }
+    @media (max-width: 820px) {
+      .wrap { width: min(var(--max), calc(100% - 34px)); }
+      .nav-links { display: none; }
+      .hero, .split { grid-template-columns: 1fr; gap: 45px; }
+      .hero { padding: 68px 0 80px; }
+      .cards { grid-template-columns: 1fr; }
+      section { padding: 76px 0; }
+      .cta-inner { display: block; }
+      .cta .btn { margin-top: 28px; }
+    }
+    @media (max-width: 520px) {
+      h1 { font-size: 2.85rem; }
+      .hero-actions, .hero-actions .btn { width: 100%; }
+      .proof-row { grid-template-columns: 1fr; gap: 5px; }
+      .footer-inner { display: block; }
+      .footer-links { margin-top: 12px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "CTO for Hire",
+    "url": "https://ctoforhire.xyz/",
+    "description": "Fractional CTO and technical advisory services from Ryan Vinson.",
+    "founder": {"@type": "Person", "name": "Ryan Vinson", "url": "https://www.ryanvinson.com"},
+    "areaServed": "Worldwide",
+    "email": "ryanv@versusmedia.com",
+    "address": {"@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US"}
+  }
+  </script>
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <h1>CTO for Hire</h1>
-            <p class="lead">Los Angeles-based Fractional CTO | Remote Technology Consultant</p>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="/">RYAN <span>VINSON</span></a>
+        <div class="nav-links">
+          <a href="#work">What I do</a>
+          <a href="#background">Background</a>
+          <a href="#contact">Contact</a>
         </div>
-    </header>
-
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Professional Services</h2>
-            <p class="text-center mb-5">
-                With over 25 years of experience, I specialize in providing strategic guidance and leadership to startups and businesses.
-                As a Fractional CTO, I help companies create actionable tech strategies, manage development teams, and deliver on key projects.
-            </p>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">CTO Strategy & Leadership</h5>
-                            <p class="card-text">I develop technical strategies and guide businesses to make informed tech decisions. Whether it's leading teams or executing key projects, I get things done efficiently.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Remote Consulting</h5>
-                            <p class="card-text">I offer 100% remote work with occasional in-person meetings for companies based in the Los Angeles/Orange County area. Let me help you navigate your technical challenges from anywhere in the world.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Specialized Technologies</h5>
-                            <p class="card-text">Technologies include: Python, Django, Javascript, Cloud Solutions (AWS, DigitalOcean), and cutting-edge AI tools. I also build on Nostr and OpenAI technologies.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </nav>
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Fractional CTO · Technical Advisor · Builder</div>
+          <h1>Make the next technical decision <em>with clarity.</em></h1>
+          <p class="hero-copy">I help founders and growing organizations turn uncertain technology decisions into a practical path forward, from architecture and team evaluation to hands-on execution.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:ryanv@versusmedia.com?subject=Fractional%20CTO%20conversation">Start a conversation</a>
+            <a class="btn btn-secondary" href="#work">See how I help</a>
+          </div>
+          <p class="hero-note">Los Angeles based. Available for remote engagements worldwide.</p>
         </div>
+        <aside class="signal-card" aria-label="When to bring in a fractional CTO">
+          <div class="signal-label">You may be at this point</div>
+          <h2>The product is moving, but the technical direction is not clear.</h2>
+          <ul class="signal-list">
+            <li>You need CTO-level judgment before committing to a build.</li>
+            <li>You have a developer or agency, but no senior technical oversight.</li>
+            <li>You are adding AI and want a sequence that makes business sense.</li>
+            <li>You need an honest read on architecture, risk, or technical debt.</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="work" class="light-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Practical technical leadership</div>
+          <h2>Senior guidance for the moments that shape a company.</h2>
+          <p class="section-intro">A fractional CTO is useful when the decisions are too important to leave to guesswork, but a full-time CTO is not yet the right step.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="card-number">01</div><h3>Technical direction</h3><p>Clarify what to build, what to postpone, and which technical choices support the business instead of creating avoidable complexity.</p></article>
+          <article class="card"><div class="card-number">02</div><h3>Architecture and code review</h3><p>Review an existing codebase, architecture, cloud setup, or product plan. Get a candid assessment of risk and the work that matters next.</p></article>
+          <article class="card"><div class="card-number">03</div><h3>Team and agency evaluation</h3><p>Evaluate developers, agencies, and technical proposals when you are responsible for the decision but do not come from an engineering background.</p></article>
+          <article class="card"><div class="card-number">04</div><h3>MVP planning</h3><p>Turn an idea into a buildable sequence with a realistic first release, clear tradeoffs, and fewer expensive surprises.</p></article>
+          <article class="card"><div class="card-number">05</div><h3>AI workflow strategy</h3><p>Identify where AI can create real leverage, what data and workflow foundations are missing, and what not to automate yet.</p></article>
+          <article class="card"><div class="card-number">06</div><h3>Hands-on execution</h3><p>When needed, move from advice into implementation, technical rescue, vendor coordination, and delivery alongside your team.</p></article>
+        </div>
+      </div>
     </section>
 
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">About Me</h2>
-            <p class="text-center mb-5">
-                I've often been called a Swiss army knife of technology solutions. With deep experience in both local and international teams, I know how to navigate chaos and get things done fast. From consulting C-suite executives to managing teams, my expertise spans multiple industries, from AI startups to media streaming companies.
-            </p>
-            <div class="text-center">
-                <a href="mailto:info@ctoforhire.xyz" class="btn btn-primary">Contact Me</a>
-                <a href="https://ryanvinson.com" class="btn btn-secondary">Visit My Main Site</a>
-            </div>
+    <section id="background">
+      <div class="wrap split">
+        <div class="section-head">
+          <div class="eyebrow">Broad experience, not a narrow specialty</div>
+          <h2>Technical leadership shaped by building real businesses.</h2>
+          <p class="section-intro">I have spent more than 25 years working across technology, product, teams, and the operational realities behind them.</p>
         </div>
+        <div class="proof">
+          <div class="proof-row"><strong>Since 2001</strong><span>Founder and technical leader at VersusMedia, an independent film and creator platform.</span></div>
+          <div class="proof-row"><strong>AI and SaaS</strong><span>Advising founders and building AI products, automation workflows, and customer-facing platforms.</span></div>
+          <div class="proof-row"><strong>Insurance and healthtech</strong><span>Experience with enrollment platforms, data-heavy systems, and technology decisions in regulated environments.</span></div>
+          <div class="proof-row"><strong>Distributed teams</strong><span>Worked with developers and partners across countries, time zones, agencies, and changing stages of growth.</span></div>
+          <div class="proof-row"><strong>Core tools</strong><span>Python, Django, JavaScript, cloud platforms, APIs, databases, AI systems, and the judgment to know when not to add another tool.</span></div>
+        </div>
+      </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 CTO for Hire | Los Angeles | Available Worldwide</p>
-    </footer>
+    <section class="light-section">
+      <div class="wrap split">
+        <div class="section-head">
+          <div class="eyebrow">A straightforward engagement</div>
+          <h2>Start with the decision in front of you.</h2>
+          <p class="section-intro">The first conversation is about understanding the situation, not forcing a package or selling a technology stack.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div><h3>Describe the situation</h3><p>Tell me what you are building, where things are stuck, and what decision you need to make.</p></div></div>
+          <div class="step"><div><h3>Get an honest assessment</h3><p>We identify the real constraint, the important risks, and whether I am the right person to help.</p></div></div>
+          <div class="step"><div><h3>Choose the right level of support</h3><p>That may be a technical audit, an MVP plan, ongoing advisory work, or hands-on leadership for a defined period.</p></div></div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="contact" class="cta">
+      <div class="wrap cta-inner">
+        <div>
+          <div class="eyebrow">Have a technical question?</div>
+          <h2>Bring me the messy version. We can find the useful next step.</h2>
+          <p>Send a short note about your company and the decision you are facing. I will respond directly.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:ryanv@versusmedia.com?subject=Fractional%20CTO%20conversation">Email Ryan</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>© 2026 Ryan Vinson · Los Angeles · United States</div>
+      <div class="footer-links"><a href="https://www.ryanvinson.com">Main site</a><a href="https://www.linkedin.com/in/ryanvinson">LinkedIn</a><a href="mailto:ryanv@versusmedia.com">ryanv@versusmedia.com</a></div>
+    </div>
+  </footer>
 </body>
 </html>
